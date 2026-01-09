@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.container {
+    background-color: aquamarine;
+    width: 450px;
+    padding: 20px;
+    border-radius: 6px;
+    border: 1px solid grey;
+}
+
+h2 {
+    text-align: center;
+    color: black;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: black;
+}
+
+select, input, button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 6px;
+    border: 1px solid gray;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: yellow;
+    color: black; /* biar kelihatan */
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: yellowgreen;
+}
+
+table {
+    width: 100%;
+    margin-top: 15px;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: gray;
+    color: white;
+}
+
+th, td {
+    border: 1px solid gray;
+    padding: 6px;
+    text-align: center;
+}
+
+.info {
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: right;
+    color: black;
+}
+
+.reset {
+    background-color: red;
+    color: white;
+}
+
+.reset:hover {
+    background-color: darkred;
+}

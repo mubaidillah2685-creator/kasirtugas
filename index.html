@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasir Bakso</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Bakso Mercon Indah Jaya</h2> 
+
+    <label>Menu Bakso</label>
+    <select id="menuBakso">
+        <option value="12000">Bakso Original - Rp12.000</option>
+        <option value="15000">Bakso Mercon - Rp15.000</option>
+        <option value="18000">Bakso Jumbo - Rp18.000</option>
+        <option value="20000">Bakso Cincang - Rp20.000</option>
+        <option value="25000">Bakso Iga - Rp25.000</option>
+    </select>
+
+    <label>Jumlah beli</label>
+    <input type="number" id="jumlahBeli" value="1" min="1">
+    
+    <button onclick="tambahBelanja()">Tambah ke transaksi</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nama menu</th>
+                <th>Jumlah</th>
+                <th>Subtotal</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody id="daftarBelanja"></tbody>
+    </table>
+
+    <div class="info">
+        Total Belanja: Rp <span id="totalBelanja">0</span>
+    </div>
+
+    <label>Uang Bayar</label>
+    <input type="number" id="uangBayar">
+
+    <button onclick="hitungKembalian()">Hitung Kembalian</button>
+
+    <div class="info">
+        Kembalian: Rp <span id="uangKembalian">0</span>
+    </div>
+
+    <button class="reset" onclick="resetTransaksi()">Reset transaksi</button>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
